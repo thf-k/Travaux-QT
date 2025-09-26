@@ -2,7 +2,9 @@
   "name": "auth-e2e",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": { "start": "serve ."},
+  "scripts": { 
+    "start": "serve .",
+    "test:auth-e2e": "playwright test"},
   "keywords": [],
   "author": "",
   "license": "ISC",
