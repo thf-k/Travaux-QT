@@ -22,7 +22,7 @@ describe("User Service", () => {
   it("should create a user", async () => {
     const input = {
       name: "Valentin R",
-      birthday: new Date(1997, 8, 13), // ← aligne avec les attentes ci-dessous
+      birthday: new Date(1997, 8, 13),
     };
 
     const user = await createUser(input);
@@ -55,7 +55,7 @@ describe("User Service", () => {
   it("should trigger a forbidden error when user is too young", async () => {
     const today = new Date();
 
-    // Date qui rend l'utilisateur plus jeune que MIN_USER_AGE
+    
     const tooYoungBirthday = new Date(
       today.getFullYear() - (MIN_USER_AGE - 1),
       today.getMonth(),
